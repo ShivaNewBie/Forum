@@ -1,0 +1,60 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <style>
+       
+
+    </style>
+    <div class= container-forum>
+        <div class="sub-container">
+            <div class="forum-category-title ">
+                <h1> Example title </h1>
+                <div class="category-description">
+                    <small>Some description</small>
+                    </div>
+            </div>
+                    
+                <div class="last-post">
+                    <h3>Last Post</h3>
+                      </div>
+                    </div>
+            
+            
+            <div class="subforum-main-container">
+                <div class="subforum-container-1"> 
+                <div class="subforum-title-container">
+                    <div class="subforum-title"><h2 id="subforum">
+                        <a href="{% url 'forumpost:forum-detail-view' %}">subforum title</a></h2>
+                        </div>
+                        <div class="subforum-description">
+                            <small>Some description</small>
+                                 </div>
+                </div>
+                <div class="subforum-post-detail">                   
+                        <a href="."><small>Title post</small></a><br>
+                        <a href="."><strong><small>Author</small></strong></a><br>
+                        <small>Date</small>
+                </div>
+            </div>
+            </div>
+    
+            <div class="subforum-container">
+                <div class="subforum-container-1"> 
+                <div class="subforum-title-container">
+                    <div class="subforum-title"><h2 id="subforum">
+                        <a href="{% url 'forumpost:forum-detail-view' %}">subforum title</a></h2>
+                        </div>
+                        <div class="subforum-description">
+                            <small>Some description</small>
+                                 </div>
+                </div>
+                <div class="subforum-post-detail">
+                    <a href="."><small>Title post</small></a><br>
+                    <a href="."><strong><small>Author</small></strong></a><br>
+                    <small>Date</small>
+                </div>
+            </div>
+            </div>
+    </div>
+    
+{% endblock %}  
